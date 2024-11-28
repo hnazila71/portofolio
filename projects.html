@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Yusuf's Projects</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <style>
+        .game-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+    
+        .overlay-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(52, 58, 64, 0.7);
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+        }
+    
+        .overlay-link:hover {
+            opacity: 1;
+        }
+    
+        /* Responsive styling for mobile */
+        @media (max-width: 768px) {
+            .d-flex {
+                flex-direction: column;
+            }
+    
+            .image-container {
+                width: 100%;
+                height: auto;
+            }
+    
+            .game-image {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <div id="navbar-placeholder"></div>
+            <!-- Projects Section-->
+            <section class="py-5">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <!-- Project Card 1-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="position: relative;">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5" style="flex: 1;">
+                                            <h2 class="fw-bolder">Text to Image Project Group</h2> 
+                                            <p>Combined user-generated images with Surabaya-themed backgrounds.</p>
+                                        </div>
+                                        <div style="position: relative; width: 300px; height: 400px;">
+                                            <!-- Second image (top layer) -->
+                                            <img src="assets/image/akmalin2.png" alt="..." style="position: relative; width: 100%; height: 100%; z-index: 1;" />
+                            
+                                            <!-- Tooltip or overlay -->
+                                            <a href="https://github.com/hnazila71/training-stable-diffusion" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(52, 58, 64, 0.7); color: white; opacity: 0; transition: opacity 0.3s ease; z-index: 2; display: flex; align-items: center; justify-content: center; text-align: center; text-decoration: none;">
+                                                <p style="margin: 0;">Go to Resource</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 2-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="position: relative;">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5" style="flex: 1;">
+                                            <h2 class="fw-bolder">Animal Pedia - Bangkit Academy</h2>
+                                            <p>Cloud Computing Learning Path. AnimalPedia is a preschool-focused educational app centered on providing detailed information about animals, including their characteristics and sounds, aiming to seamlessly blend learning with fun for preschoolers.</p>
+                                        </div>
+                                        <div style="position: relative; width: 300px; height: 400px;">
+                                            <!-- Second image (top layer) -->
+                                            <img src="assets/image/bangkit4.png" alt="..." style="width: 100%; height: 100%; object-fit: cover; z-index: 1;" />
+                                            
+                                            <!-- Tooltip or overlay -->
+                                            <a href="https://github.com/GrowUpTeam/Capstone-Project-GrowUp-Team" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(52, 58, 64, 0.7); color: white; opacity: 0; transition: opacity 0.3s ease; z-index: 2; display: flex; align-items: center; justify-content: center; text-align: center; text-decoration: none;">
+                                                <p style="margin: 0;">Go to Resource</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 3 -->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="position: relative;">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5" style="flex: 1;">
+                                            <h2 class="fw-bolder">Online Shop Project Group</h2>
+                                            <p>Create a Website with Code Igniter for Online Shopping Website</p>
+                                        </div>
+                                        <div style="position: relative; width: 300px; height: 400px;">
+                                            <!-- Second image (top layer) -->
+                                            <img src="assets/image/code fix.png" alt="..." style="width: 100%; height: 100%; object-fit: cover; z-index: 1;" />
+                                            
+                                            <!-- Tooltip or overlay -->
+                                            <a href="https://github.com/hnazila71/Online-Shopping-Code-Igniter" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(52, 58, 64, 0.7); color: white; opacity: 0; transition: opacity 0.3s ease; z-index: 2; display: flex; align-items: center; justify-content: center; text-align: center; text-decoration: none;">
+                                                <p style="margin: 0;">Go to Resource</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project 4 -->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="position: relative;">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5" style="flex: 1;">
+                                            <h2 class="fw-bolder">Rovirus War Game</h2>
+                                            <p>War Game using Java Languange</p>
+                                        </div>
+                                        <div style="position: relative; width: 300px; height: 400px;">
+                                            <!-- Second image (top layer) -->
+                                            <img src="assets/image/rovirus.png" alt="sembarangs" style="width: 100%; height: 100%; object-fit: cover; z-index: 1;" />
+                                            
+                                            <!-- Tooltip or overlay -->
+                                            <a href="https://github.com/hnazila71/Rovirus-War-Game" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(52, 58, 64, 0.7); color: white; opacity: 0; transition: opacity 0.3s ease; z-index: 2; display: flex; align-items: center; justify-content: center; text-align: center; text-decoration: none;">
+                                                <p style="margin: 0;">Go to Resource</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 5 -->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="position: relative;">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5" style="flex: 1;">
+                                            <h2 class="fw-bolder">Form Using Google Framework</h2>
+                                            <p>Create Simple form will be registered in GoogleSheet.                                            </p>
+                                        </div>
+                                        <div style="position: relative; width: 300px; height: 400px;">
+                                            <!-- Second image (top layer) -->
+                                            <img src="assets/image/form4.png" alt="..." style="width: 100%; height: 100%; object-fit: cover; z-index: 1;" />
+                                            
+                                            <!-- Tooltip or overlay -->
+                                            <a href="https://github.com/hnazila71/Tugas-PBKK-Apps-Script" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(52, 58, 64, 0.7); color: white; opacity: 0; transition: opacity 0.3s ease; z-index: 2; display: flex; align-items: center; justify-content: center; text-align: center; text-decoration: none;">
+                                                <p style="margin: 0;">Go to Resource</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- end -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to action section-->
+            <section class="py-5 bg-gradient-primary-to-secondary text-white">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="display-4 fw-bolder mb-4">Aspiring Project Manager and Network Engineer</h2>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="https://mail.google.com/mail/?view=cm&fs=1&to=hnazila71@gmail.com&su=Interested%20in%20Collaborating%20">Interested in Collaborating</a>
+                        <!-- <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hnazila71@gmail.com&su=Interested%20in%20Collaborating%20" target="_blank">Interested in Collaborating</a></li> -->
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+    
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+        <script>
+            const cards = document.querySelectorAll('.card');
+        
+            cards.forEach(card => {
+                const overlay = card.querySelector('a');
+        
+                card.addEventListener('mouseenter', () => {
+                    overlay.style.opacity = '1'; // Fade in
+                });
+        
+                card.addEventListener('mouseleave', () => {
+                    overlay.style.opacity = '0'; // Fade out
+                });
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            // Fetch navbar.html and inject it into the page
+            fetch('navbar.html')
+                .then(response => response.text())  // Mengambil konten dari navbar.html
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;  // Menyisipkan konten navbar ke dalam placeholder
+                })
+                .catch(error => console.error('Error loading navbar:', error));  // Menangani error jika ada masalah dalam memuat navbar
+        </script>
+    </body>
+</html>
