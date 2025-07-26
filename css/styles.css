@@ -11584,18 +11584,18 @@ html {
 
 .profile {
   position: relative;
-  height: 75vw;
-  width: 75vw;
-  border-radius: 5vw;
+  height: 95vw;
+  width: 80vw;  /* <-- Coba naikkan lebar */
+  border-radius: 3vw;
   margin-top: 5vw;
-  max-height: 40rem;
-  max-width: 40rem;
+  /* max-height: ... */
+  max-width: 500rem; /* <-- Sesuaikan juga max-width */
 }
 .profile .profile-img {
-  height: 80vw;
+  height: 90vw;
   max-height: 45rem;
   position: absolute;
-  bottom: 0;
+  bottom: 0vw;
   left: 50%;
   transform: translateX(-50%);
 }
