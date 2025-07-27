@@ -1,3 +1,44 @@
+<style>
+    /* Membuat link menutupi seluruh kartu */
+    .inquiry-option-link {
+        text-decoration: none;
+        color: inherit; /* Mewarisi warna teks dari parent */
+    }
+
+    /* Styling dasar untuk setiap kartu opsi */
+    .inquiry-option {
+        border: 1px solid #e0e0e0;
+        border-radius: 12px; /* Sudut lebih tumpul */
+        padding: 24px 16px;
+        text-align: center;
+        background-color: #f9f9f9;
+        transition: all 0.3s ease; /* Transisi halus untuk semua properti */
+        cursor: pointer;
+    }
+
+    /* Efek saat kursor diarahkan ke kartu */
+    .inquiry-option:hover {
+        transform: translateY(-5px); /* Sedikit terangkat ke atas */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih jelas */
+        border-color: #0d6efd; /* Warna border berubah menjadi biru */
+        background-color: #ffffff;
+    }
+
+    /* Styling untuk ikon di dalam kartu */
+    .inquiry-option i {
+        font-size: 2.5rem; /* Ukuran ikon lebih besar */
+        margin-bottom: 12px;
+        display: block;
+        color: #0d6efd; /* Warna ikon biru */
+    }
+
+    /* Styling untuk teks di dalam kartu */
+    .inquiry-option span {
+        font-weight: 500;
+        font-size: 0.95rem;
+    }
+</style>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
     <div class="container px-5">
         <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Yusuf Hasan Nazila</span></a>
@@ -18,25 +59,46 @@
 
 <!-- Modal for Choosing Inquiry Type -->
 <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="emailModalLabel">Choose Inquiry Type</h5>
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document"> <div class="modal-content">
+            <div class="modal-header border-0"> <h5 class="modal-title" id="emailModalLabel">Choose Inquiry Type</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                
             </div>
-            <div class="modal-body">
-                <ul>
-                    <!-- Direct links to Gmail with subjects -->
-                    <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hnazila71@gmail.com&su=Inquiry%20about%20My%20Portfolio%20" target="_blank">Inquiry about My Portfolio</a></li>
-                    <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hnazila71@gmail.com&su=Interested%20in%20Collaborating%20" target="_blank">Interested in Collaborating</a></li>
-                    <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hnazila71@gmail.com&su=Portfolio%20Review%20Request%20-%20" target="_blank">Portfolio Review Request</a></li>
-                    <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hnazila71@gmail.com&su=Other%20About%20Portofolio" target="_blank">Other</a></li>
-                </ul>
+            <div class="modal-body px-4 pb-4">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <a href="mailto:hnazila71@gmail.com?subject=Inquiry%20about%20My%20Portfolio" target="_blank" class="inquiry-option-link">
+                            <div class="inquiry-option">
+                                <i class="bi bi-person-workspace"></i>
+                                <span>Inquiry about My Portfolio</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="mailto:hnazila71@gmail.com?subject=Interested%20in%20Collaborating" target="_blank" class="inquiry-option-link">
+                            <div class="inquiry-option">
+                                <i class="bi bi-people-fill"></i>
+                                <span>Interested in Collaborating</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="mailto:hnazila71@gmail.com?subject=Portfolio%20Review%20Request" target="_blank" class="inquiry-option-link">
+                            <div class="inquiry-option">
+                                <i class="bi bi-journal-check"></i>
+                                <span>Portfolio Review Request</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="mailto:hnazila71@gmail.com?subject=Other%20Inquiry" target="_blank" class="inquiry-option-link">
+                            <div class="inquiry-option">
+                                <i class="bi bi-three-dots"></i>
+                                <span>Other</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
-        </div>
     </div>
 </div>
